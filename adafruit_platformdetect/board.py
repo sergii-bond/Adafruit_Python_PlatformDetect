@@ -786,7 +786,9 @@ class Board:
             elif "neo2" in board_value and "H5" in chip_id:
                 board = boards.NANOPI_NEO_2
         elif any(x in board_value for x in ("orange pi", "orangepi")):
-            if "zero" in board_value:
+            if "zero2 w" in board_value:
+                board = boards.ORANGE_PI_ZERO_2W
+            elif "zero" in board_value:
                 if "H5" in chip_id:
                     board = boards.ORANGE_PI_ZERO_PLUS_2H5
                 elif "H616" in chip_id:
